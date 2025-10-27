@@ -1,48 +1,67 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Introduction à HTML5 & CSS3</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio - Projet CSS3</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>HTML5 & CSS3 — Fondamentaux pour le Web</h1>
-    <p class="subtitle">Apprenez à structurer vos pages et à styliser vos contenus</p>
-  </header>  <nav>
-    <ul>
-      <li><a href="#intro">Introduction</a></li>
-      <li><a href="#structure">Structure HTML</a></li>
-      <li><a href="#style">Styling CSS</a></li>
-      <li><a href="#exemples">Exemples</a></li>
-    </ul>
-  </nav>  <main>
-    <section id="intro">
-      <h2>Pourquoi HTML5 ?</h2>
-      <p>HTML5 fournit la structure sémantique des pages web : header, nav, main, footer, et sections.</p>
-    </section><section id="structure">
-  <h2>Éléments sémantiques</h2>
-  <p>Utilisez <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code> et <code>&lt;footer&gt;</code> pour améliorer l'accessibilité et le référencement.</p>
-</section>
 
-<section id="style">
-  <h2>CSS3 pour la présentation</h2>
-  <p>CSS3 permet de modifier les couleurs, la taille des polices, l'alignement et la mise en page responsive.</p>
-</section>
+    <header>
+        <h1>Bienvenue sur mon Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<section id="exemples">
-  <h2>Exemples courts</h2>
-  <ul>
-    <li>Appliquer une police globale avec <code>body { font-family: ... }</code>.</li>
-    <li>Modifier la couleur d'un <code>header</code> et d'un <code>footer</code>.</li>
-    <li>Styliser les <code>li</code> d'un menu pour les afficher en ligne.</li>
-  </ul>
-</section>
+    <section id="about">
+        <img src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?auto=format&fit=crop&w=200&q=80" alt="Photo de profil">
+        <h2>À propos de moi</h2>
+        <p>Je suis un développeur passionné par le web, en particulier par le design CSS3 et la création d’interfaces modernes et élégantes.</p>
+    </section>
 
-  </main>  <footer>
-    <p>Site d'exemple — notions de base en HTML5 & CSS3 • Academy of Human Resources</p>
-  </footer>
+    <section id="skills">
+        <h2>Mes compétences</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3 (Flexbox, Grid, Animations)</li>
+            <li>Responsive Design</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Mes projets</h2>
+        <div class="project-card">
+            <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=600&q=80" alt="Projet site vitrine">
+            <h3>Site vitrine</h3>
+            <p>Création d’un site vitrine professionnel avec HTML et CSS3, adapté à tous les écrans.</p>
+        </div>
+        <div class="project-card">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80" alt="Projet portfolio">
+            <h3>Page portfolio</h3>
+            <p>Une page personnelle présentant mes travaux, mon parcours et mes réalisations en design web.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contactez-moi</h2>
+        <form>
+            <input type="text" placeholder="Nom" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mon Portfolio - Tous droits réservés.</p>
+    </footer>
+
 </body>
 </html>
